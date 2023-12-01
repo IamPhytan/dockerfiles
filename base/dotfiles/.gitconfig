@@ -1,0 +1,22 @@
+[user]
+	name = Damien LaRocque
+	email = phicoltan@gmail.com
+	signingKey = 0F3F6D7DED16E51795A66B23D32179A067AB61BA
+[core]
+	editor = nvim
+	autocrlf = input
+	# excludesFile = ~/.config/git/.gitignore
+	# attributesFile = ~/.config/git/.gitattributes
+[init]
+	defaultBranch = main
+[alias]
+	s = status
+	a = add
+	aa = add -A
+	c = commit
+	cm = commit -m
+	d = diff
+	dword = d --color-words=.
+	p = push
+	pl = pull
+	adog = log --all --decorate --oneline --graph
