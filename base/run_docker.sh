@@ -12,6 +12,7 @@ docker run \
     --env SSH_AUTH_SOCK=/ssh-agent \
     --env DISPLAY=$DISPLAY \
     --env TERM=xterm-256color \
+    --rm \
     --name $CONTAINER_NAME \
     phicoltan:base \
-    /bin/bash«`
+    /bin/bash
