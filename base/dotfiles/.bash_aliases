@@ -17,8 +17,10 @@ alias cm="git commit -m "
 alias csm="git commit -s -m "
 alias cam="git commit -am "
 alias d="git diff "
-alias dword="d --color-words=."
+alias dword="d --word-diff"
+alias dim="git diff-image "
 alias p="git push"
+alias pf="p --force-with-lease"
 alias pl="git pull"
 
 # APT

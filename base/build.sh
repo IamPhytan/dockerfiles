@@ -1,1 +1,0 @@
-docker build --ssh default=$SSH_AUTH_SOCK --tag phicoltan:base ./Dockerfile
