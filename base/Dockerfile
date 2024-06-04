@@ -7,6 +7,7 @@ RUN apt-get update && apt-get -y install \
     sudo \
     git \
     curl \
+    wget \
     openssh-server \
     apt-transport-https \
     bash-completion \
@@ -28,5 +29,8 @@ COPY dotfiles/.gitconfig /home/docker/.gitconfig
 COPY dotfiles/.tmux.conf /home/docker/.tmux.conf
 COPY dotfiles/.bash_aliases /home/docker/.bash_aliases
 
+COPY ./entrypoint.sh /
+
 SHELL ["/bin/bash", "-c"]
+ENTRYPOINT [ "/entrypoint.sh" ]
 CMD /bin/bash -l
