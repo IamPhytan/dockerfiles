@@ -19,7 +19,8 @@ RUN apt-get update && apt-get -y install \
     gcc \
     g++ \
     python-is-python3 \
-    python3-venv
+    python3-venv \
+    python3-pip
 
 RUN useradd -m docker && echo "docker:docker" | chpasswd && adduser docker sudo
 WORKDIR /home/docker
